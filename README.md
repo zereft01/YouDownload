@@ -1,16 +1,15 @@
 # YouDownload
-Descargar Música y Videos de Youtube desde la terminal linux
-#Autor: zereft01
-#Fecha: 15/03/21
-#Descripción: Herramienta para descargar musica y videos de youtube desde la terminal. Individuales o Playlist.
-#Archivo: DMusic 
-#Contacto:
+	Descargar Música y Videos de Youtube desde la terminal linux
+	#Autor: zereft01
+	#Fecha: 15/03/21
+	#Descripción: Herramienta para descargar musica y videos de youtube desde la terminal. Individuales o Playlist.
+	#Archivo: DMusic 
+	#Contacto:
 	-Correo: kullia.kg55@gmail.com
 	-Telegram: https://t.me/zereft
 
 
-
-	Uso
+Instalaciòn:
 
 	Clonar repositorio:
 	   git clone 
