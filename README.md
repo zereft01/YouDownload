@@ -12,7 +12,7 @@
 Instalaciòn:
 
 	Clonar repositorio:
-	   git clone 
+	   git clone https://github.com/zereft01/YouDownload
 	Abrir carpeta:
 		YouDownload
 	Instalar dependencias (Seguir instrucciones del script):
@@ -32,6 +32,6 @@ Si quieres ejecutarlo desde cualquier lugar sin estar dentro de la carpeta debes
 
 Dudas, sugerencias, comentarios, etc al correo o telegram
 #ACTUALIZACIONES: 
----Musica descarga portadas (las caratula que tiene cada video). 
----Video Descarga en maxima calidad.
+---Musica: descarga portadas (las caratula que tiene cada video). 
+---Video: descarga en maxima calidad.
 ---Se creo script para instalar las dependencias automaticamente (Install.sh)
