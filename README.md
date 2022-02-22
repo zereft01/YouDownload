@@ -14,7 +14,7 @@ Instalaciòn:
 	Clonar repositorio:
 	   git clone https://github.com/zereft01/YouDownload
 	Abrir carpeta:
-		YouDownload
+	   cd YouDownload
 	Instalar dependencias (Seguir instrucciones del script):
 	   bash Install.sh
 	Ejecutar:
