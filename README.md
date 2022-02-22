@@ -10,16 +10,16 @@ Descargar Música y Videos de Youtube desde la terminal linux
 
 
 
-Uso
+	Uso
 
-Clonar repositorio:
-   git clone 
-Abrir carpeta:
-	YouDownload
-Instalar dependencias (Seguir instrucciones del script):
-   bash Install.sh
-Ejecutar:
-   ./YouDown
+	Clonar repositorio:
+	   git clone 
+	Abrir carpeta:
+		YouDownload
+	Instalar dependencias (Seguir instrucciones del script):
+	   bash Install.sh
+	Ejecutar:
+	   ./YouDown
 
 
 
@@ -27,9 +27,9 @@ Ejecutar:
 Seguir instrucciones del script para descargar música o videos.
 Si quieres ejecutarlo desde cualquier lugar sin estar dentro de la carpeta debes mover el script a donde estan los binarios:
 
-En termux es: /data/data/com.termux/files/usr/bin
-A demas dar permisos de ejeucion asi: chmod +x YouDown
-Con esto solo deberas escribir el nombre (YouDown) y se ejecutara la herramienta
+	En termux es: /data/data/com.termux/files/usr/bin
+	A demas dar permisos de ejeucion asi: chmod +x YouDown
+	Con esto solo deberas escribir el nombre (YouDown) y se ejecutara la herramienta
 
 Dudas, sugerencias, comentarios, etc al correo o telegram
 #ACTUALIZACIONES: 
