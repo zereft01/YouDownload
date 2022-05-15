@@ -2,14 +2,14 @@
 	Descargar Música y Videos de Youtube desde la terminal linux y android (termux)
 	#Autor: zereft01
 	#Fecha: 15/03/21
-	#Descripción: Herramienta para descargar musica y videos individuales o Playlist de youtube desde la terminal linux y termux.
+	#Descripción: Herramienta para descargar música y videos individuales o Playlist de youtube desde la terminal linux y termux.
 	#Archivos: YouDownload, Install.sh.
-	#Contacto:
+	#Contacto: 
 	-Correo: kullia.kg55@gmail.com
 	-Telegram: https://t.me/zereft
 
 
-Instalaciòn:
+Instalación:
 
 	Clonar repositorio:
 	   git clone https://github.com/zereft01/YouDownload
