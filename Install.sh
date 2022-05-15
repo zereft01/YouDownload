@@ -32,7 +32,7 @@ case $os in
 		apt update -y
 		apt install ffmpeg
 		apt install python
-		pip install youtube-dl
+		pip install yt-dlp
 		chmod +x YouDownload
 		echo "Instalación finalizada. Para iniciar la herramienta ejecuta ./YouDonload"
 		printf $reset
@@ -41,9 +41,9 @@ case $os in
 		printf $cyan
 		echo $lineas
 		sudo apt install ffmpeg
-		sudo apt install youtube-dl
+		sudo apt install yt-dlp
 		chmod +x YouDownload
-		echo "Instalaciòn finalizada. Para iniciar la herramienta ejecuta ./YouDownload"
+		echo "Instalación finalizada. Para iniciar la herramienta ejecuta ./YouDownload"
 		printf $reset
 	;;
 	[3]|*)
