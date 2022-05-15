@@ -46,7 +46,7 @@ case $arch in
 		
 		sleep 0.5
 		echo "Iniciando descarga _>"
-		youtube-dl -f bestaudio --embed-thumbnail --extract-audio --audio-format mp3 --audio-quality 0 $Ind
+		yt-dlp -f bestaudio --embed-thumbnail --extract-audio --audio-format mp3 --audio-quality 0 $Ind
 		sleep 0.5 
 		echo $lineas
 		echo "Descarga finalizada, el archivo se encuentra en: _>"
@@ -61,7 +61,7 @@ case $arch in
 		echo $lineas
 		sleep 0.5
 		echo "Preparando descarga _>"
-		youtube-dl -ict --embed-thumbnail --yes-playlist --extract-audio --audio-format mp3 --audio-quality 0 $Play
+		yt-dlp -ict --embed-thumbnail --yes-playlist --extract-audio --audio-format mp3 --audio-quality 0 $Play
 		echo $lineas
 		;;
 	 [3]|*)
@@ -94,7 +94,7 @@ case $pregunta in
 		
 		sleep 0.5
 		echo "Iniciando descarga _> "
-		youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4 $vi
+		yt-dlp -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4 $vi
 		sleep 0.5
 		echo $lineas
 		echo "Descarga finalizada, el archivo se encuentra en: _>"
@@ -109,7 +109,7 @@ case $pregunta in
 		echo $lineas
 		sleep 0.5
 		echo "Preparando descarga _>"
-		youtube-dl -f 'bestvideo[height<=1080]+bestaudio/best[height<=1080]' $Play
+		yt-dlp -f 'bestvideo[height<=1080]+bestaudio/best[height<=1080]' $Play
 		echo $lineas
 	;;
 	 [3]|*)
