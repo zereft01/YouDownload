@@ -9,7 +9,7 @@ magenta='\033[1;35m'
 cyan='\033[1;36m'
 reset='\033[0m'
 printf $red
-v=1.0
+v=3.0
 echo $lineas
 
 echo "╻ ╻┏━┓╻ ╻╺┳┓┏━┓╻ ╻┏┓╻╻  ┏━┓┏━┓╺┳┓
