@@ -32,6 +32,8 @@ Si quieres ejecutarlo desde cualquier lugar sin estar dentro de la carpeta debes
 
 Dudas, sugerencias, comentarios, etc al correo o telegram
 #ACTUALIZACIONES: 
----Musica: descarga portadas (las caratula que tiene cada video). 
----Video: descarga en maxima calidad.
----Se creo script para instalar las dependencias automaticamente (Install.sh)
+
+	Música: descarga portadas (las caratula que tiene cada video). 
+	Video: descargas en maxima calidad.
+	Se creo script para instalar las dependencias automaticamente (Install.sh)
+	Cambio de dependecia (youtube-dl) por un fork del mismo (yt-dlp)
