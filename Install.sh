@@ -29,6 +29,7 @@ case $os in
 	[Tt]ermux|1)
 		printf $green
 		echo $lineas
+		pkg update -y
 		apt update -y
 		apt install ffmpeg
 		apt install python
