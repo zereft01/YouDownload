@@ -35,5 +35,6 @@ Dudas, sugerencias, comentarios, etc al correo o telegram
 
 	Música: descarga portadas (las caratula que tiene cada video). 
 	Video: descargas en maxima calidad.
-	Se creo script para instalar las dependencias automaticamente (Install.sh)
-	Cambio de dependecia (youtube-dl) por un fork del mismo (yt-dlp)
+	Se creo script para instalar las dependencias automaticamente (Install.sh).
+	Cambio de dependecia (youtube-dl) por un fork del mismo (yt-dlp).
+	Tambien descarga videos de facebook.
