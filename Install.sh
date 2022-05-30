@@ -35,7 +35,7 @@ case $os in
 		apt install python
 		pip install yt-dlp
 		chmod +x YouDownload
-		echo "Instalación finalizada. Para iniciar la herramienta ejecuta ./YouDonload"
+		echo "Instalación finalizada. Para iniciar la herramienta ejecuta ./YouDownload"
 		printf $reset
 	;;
 	[Uu]buntu|2) 
