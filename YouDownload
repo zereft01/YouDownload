@@ -61,7 +61,7 @@ case $arch in
 		echo $lineas
 		sleep 0.5
 		echo "Preparando descarga _>"
-		yt-dlp -ict --embed-thumbnail --yes-playlist --extract-audio --audio-format mp3 --audio-quality 0 $Play
+		yt-dlp --ignore-errors --format bestaudio --extract-audio --audio-format mp3 --audio-quality 160K --output "%(title)s.%(ext)s" --yes-playlist $Play
 		echo $lineas
 		;;
 	 [3]|*)
