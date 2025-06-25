@@ -1,55 +1,50 @@
-clear
-lineas="==================================="
-red='\033[1;31m'                                        
-green='\033[1;32m'
-yellow='\033[1;33m'                                   
-blue='\033[1;34m'                                       
-magenta='\033[1;35m'                                    
-cyan='\033[1;36m'
-reset='\033[0m'
-printf $red
+#!/bin/bash
 
-echo "
+# Verificar si es root o sudo
+if [[ $EUID -ne 0 ]]; then
+	echo -e "\033[1;31mEste script debe ejecutarse como root o usando sudo.\033[0m"
+	exit 1
+fi
+
+# Colores
+lineas="==================================="
+red='\033[1;31m'
+green='\033[1;32m'
+cyan='\033[1;36m'
+blue='\033[1;34m'
+reset='\033[0m'
+
+# Banner
+clear
+echo -e "${red}
 ╻┏┓╻┏━┓╺┳╸┏━┓╻  ╻   ┏━┓╻ ╻
 ┃┃┗┫┗━┓ ┃ ┣━┫┃  ┃   ┗━┓┣━┫
 ╹╹ ╹┗━┛ ╹ ╹ ╹┗━╸┗━╸╹┗━┛╹ ╹
+${reset}"
 
-"
-printf $reset
-printf $red
-echo "Estas por instalar las herramientas necesarias para usar YouDownload"
-read -p "Selecciona tu sistema:
-[1]Termux 
-[2]Ubuntu 
-[3]Salir " os 
-printf $reset
+# Confirmación
+echo -e "${red}Estas por instalar las herramientas necesarias para usar YouDownloadMusic en Linux.${reset}"
+read -p "¿Deseas continuar? (s/n): " confirm
 
+if [[ $confirm != [Ss] ]]; then
+	echo -e "${blue}Cancelando instalación...${reset}"
+	exit 0
+fi
 
-case $os in
-	[Tt]ermux|1)
-		printf $green
-		echo $lineas
-		pkg update -y
-		apt update -y
-		apt install ffmpeg
-		apt install python
-		pip install yt-dlp
-		chmod +x YouDownload
-		echo "Instalación finalizada. Para iniciar la herramienta ejecuta ./YouDownload"
-		printf $reset
-	;;
-	[Uu]buntu|2) 
-		printf $cyan
-		echo $lineas
-		sudo apt install ffmpeg
-		sudo apt install yt-dlp
-		chmod +x YouDownload
-		echo "Instalación finalizada. Para iniciar la herramienta ejecuta ./YouDownload"
-		printf $reset
-	;;
-	[3]|*)
-		printf $blue
-		echo $lineas
-		echo "              Bye"
-		echo $lineas
-esac
+# Proceso de instalación
+echo -e "${cyan}${lineas}"
+echo "Actualizando repositorios..."
+apt update -y && apt upgrade -y
+
+echo "Instalando dependencias: ffmpeg y curl..."
+apt install -y ffmpeg curl
+
+echo "Descargando yt-dlp más reciente..."
+curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp
+chmod a+rx /usr/local/bin/yt-dlp
+
+chmod +x YouDownloadMusic
+
+echo -e "${green}✅ Instalación finalizada.${reset}"
+echo -e "${green}Para iniciar la herramienta ejecuta: ./YouDownloadMusic${reset}"
+echo -e "${cyan}${lineas}${reset}"

@@ -1,40 +1,102 @@
-# YouDownload
-	Descargar Música y Videos de Youtube y facebook (Ver lista de web disponibles ejecuta yt-dlp --list-extractors. Debes probar en las demas 		web)desde la terminal linux y android (termux).
-	#Autor: zereft01
-	#Fecha: 15/03/21
-	#Descripción: Herramienta para descargar música y videos individuales o Playlist de youtube desde la terminal linux y termux.
-	#Archivos: YouDownload, Install.sh.
-	#Contacto: 
-	-Correo: kullia.kg55@gmail.com
-	-Telegram: https://t.me/zereft
+# 🎧 YouDownloadMusic
 
+Descarga música de YouTube en formato MP3, con carátulas y en la mejor calidad, directamente desde la terminal de Linux.
 
-Instalación:
+---
 
-	Clonar repositorio:
-	   git clone https://github.com/zereft01/YouDownload
-	Abrir carpeta:
-	   cd YouDownload
-	Instalar dependencias (Seguir instrucciones del script):
-	   bash Install.sh
-	Ejecutar:
-	   ./YouDownload
+## 🚀 Características
 
+* ✅ Descarga canciones o playlists completas de YouTube.
+* ✅ Guarda los archivos en formato MP3 con miniatura como portada.
+* ✅ Crea automáticamente carpetas con el nombre de la playlist.
+* ✅ Interfaz simple desde terminal.
+* ✅ Ligero, sin dependencias gráficas.
+* ✅ Basado en [`yt-dlp`](https://github.com/yt-dlp/yt-dlp) (fork mejorado de youtube-dl).
 
+---
 
+## 📦 Requisitos
 
-Seguir instrucciones del script para descargar música o videos.
-Si quieres ejecutarlo desde cualquier lugar sin estar dentro de la carpeta debes mover el script a donde estan los binarios:
+* **yt-dlp**
+* **ffmpeg** (para la conversión a MP3 y carátula)
 
-	En termux es: /data/data/com.termux/files/usr/bin
-	A demas dar permisos de ejeucion asi: chmod +x YouDownload
-	Con esto solo deberas escribir el nombre (YouDownload) y se ejecutara la herramienta
+---
 
-Dudas, sugerencias, comentarios, etc al correo o telegram
-#ACTUALIZACIONES: 
+## 🛠️ Instalación
 
-	Música: descarga portadas (las caratula que tiene cada video). 
-	Video: descargas en maxima calidad.
-	Se creo script para instalar las dependencias automaticamente (Install.sh).
-	Cambio de dependecia (youtube-dl) por un fork del mismo (yt-dlp).
-	Tambien descarga videos de facebook.
+1. Clonar el repositorio:
+
+```bash
+git clone https://github.com/Bernard2806/YouDownloadMusic.git
+cd YouDownloadMusic
+```
+
+2. Dar permisos de ejecución:
+
+```bash
+sudo chmod +x YouDownloadMusic.sh
+```
+
+3. Ejecutar el script:
+
+```bash
+sudo ./YouDownloadMusic.sh
+```
+
+---
+
+## 📂 Estructura de descarga
+
+* Si descargas una **canción individual**, se guarda en la carpeta actual:
+
+```
+./NombreCancion.mp3
+```
+
+* Si descargas una **playlist**, se crea una carpeta con su nombre y dentro se guardan las canciones:
+
+```
+./NombrePlaylist/
+├── Cancion1.mp3
+├── Cancion2.mp3
+└── ...
+```
+
+---
+
+## 🔥 Uso
+
+Simplemente ejecuta el script y seguí las instrucciones del menú:
+
+```
+[1] Descargar Canción
+[2] Descargar Playlist
+[3] Salir
+```
+
+---
+
+## 🧠 Nota
+
+Este script está pensado exclusivamente para descarga de **música** desde YouTube. No soporta descarga de videos.
+
+---
+
+## 💻 Compatible con
+
+* Linux (Debian, Ubuntu, Arch, Fedora, etc.)
+
+---
+
+## 📜 Licencia
+
+Este proyecto es de código abierto bajo la licencia [MIT](LICENSE).
+
+---
+
+## 🙌 Créditos
+
+* Script original de [zereft01](https://github.com/zereft01/YouDownload).
+* Adaptado, simplificado y mejorado por Bernard2806.
+
+---
