@@ -27,7 +27,7 @@ Seguir instrucciones del script para descargar música o videos.
 Si quieres ejecutarlo desde cualquier lugar sin estar dentro de la carpeta debes mover el script a donde estan los binarios:
 
 	En termux es: /data/data/com.termux/files/usr/bin
-	A demas dar permisos de ejeucion asi: chmod +x YouDownload
+	A demas dar permisos de ejecuciòn asi: chmod +x YouDownload
 	Con esto solo deberas escribir el nombre (YouDownload) y se ejecutara la herramienta
 
 Dudas, sugerencias, comentarios, etc al correo o telegram
