@@ -30,11 +30,10 @@ Si quieres ejecutarlo desde cualquier lugar sin estar dentro de la carpeta debes
 	A demas dar permisos de ejecuciòn asi: chmod +x YouDownload
 	Con esto solo deberas escribir el nombre (YouDownload) y se ejecutara la herramienta
 
-Dudas, sugerencias, comentarios, etc al correo o telegram
 #ACTUALIZACIONES: 
 
-	Música: descarga portadas (las caratula que tiene cada video). 
-	Video: descargas en maxima calidad.
+	Música: Descarga portadas (las caratula que tiene cada video). 
+	Video: Descargas en maxima calidad.
 	Se creo script para instalar las dependencias automaticamente (Install.sh).
 	Cambio de dependecia (youtube-dl) por un fork del mismo (yt-dlp).
 	Tambien descarga videos de facebook.
